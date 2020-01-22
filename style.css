@@ -4,6 +4,15 @@ html, body {
   body {
     position: relative;
   }
+
+  .hotspringonpage {
+      background: url(/hotspring-logo.svg) center center no-repeat;
+      min-width: cover;
+      min-height: 30vw;
+  }
+
+
+
   svg {
     display: block;
     margin: 0 auto;
