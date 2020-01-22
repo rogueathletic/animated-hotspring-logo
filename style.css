@@ -6,7 +6,7 @@ html, body {
   }
 
   .hotspringonpage {
-      background: url(/hotspring-logo.svg) center center no-repeat;
+      background: url(https://github.com/rogueathletic/animated-hotspring-logo/blob/master/hotspring-logo.svg) center center no-repeat;
       min-width: cover;
       min-height: 30vw;
   }
