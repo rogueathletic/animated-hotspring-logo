@@ -1,51 +1,75 @@
-html, body {
-    height: 100%;
-  }
-  body {
-    position: relative;
-  }
+html,
+body {
+  height: 100%;
+}
 
-  .hotspringonpage {
-      background: url(https://github.com/rogueathletic/animated-hotspring-logo/blob/master/hotspring-logo.svg) center center no-repeat;
-      min-width: cover;
-      min-height: 30vw;
-  }
+body {
+  position: relative;
+}
 
+.minifiedAnimatedSvg {
+  background: url(./hotspring-logo.svg) center center no-repeat;
+  max-width: 800px;
+  width: 800px;
+  min-height: 200px;
+  max-height: 200px;
 
+}
 
-  svg {
-    display: block;
-    margin: 0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .page-foot {
-    background: #ededed;
-    bottom: 0;
-    color: #222;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: flex-start;
-  }
-  .page-foot-column {
-    order: 0;
-    flex: 1 1 auto;
-    align-self: auto;
-    padding: 1em;
-  }
-  .page-foot-column:nth-child(2) {
-    text-align: right;
-  }
-  a {
-    color: inherit;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
+.originalSvg {
+  background: url(./hot-spring-logo-un-minified.svg) center center no-repeat;
+  max-width: 800px;
+  width: 800px;
+  min-height: 200px;
+  max-height: 200px;
+}
+
+.container {
+  display: -webkit-inline-box;
+  display: inline-flex;
+  position: relative;
+  margin: auto -800px;
+  top: 200px;
+  left: 50%;
+
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-family: sans-serif;
+  font-weight: 900;
+  color: transparent;
+  text-transform: uppercase;
+  background: #333;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
+}
+
+h3 {
+  text-align: center;
+  margin-top: -20px;
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+xmp.unminified {
+  position: relative;
+  max-height: 50vh;
+  max-width: 1000px;
+  margin: auto -25%;
+  left: 50%; 
+  overflow-Y: scroll;
   
+}
+
+xmp.minified {
+  position: relative;
+  overflow-x: scroll;
+  max-width: 1000px;
+  margin: auto -25%;
+  left: 50%; 
+  line-height: 85px;
+}
