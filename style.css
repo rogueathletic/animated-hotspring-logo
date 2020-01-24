@@ -28,14 +28,55 @@ body {
   max-height: 200px;
 }
 
-.container {
-  display: -webkit-inline-box;
-  display: inline-flex;
-  position: relative;
-  margin: auto -800px;
-  top: 200px;
-  left: 50%;
+table {
+  margin: 60px;
+}
 
+tr td:first-child {
+  padding-right: 20px;
+}
+
+tr td {
+  text-align: left
+}
+
+
+
+.container {
+                display: -webkit-inline-box;
+                display: inline-flex;
+               position: relative;
+            align-items: center;
+        justify-content: center;
+         flex-direction: row;
+                  width: 100%;
+                 margin: 10% 0;
+             min-height: 200px;
+            align-items: center;
+          border-radius: 50px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+       -o-border-radius: 50px;
+}
+
+.container.minifiedCont,
+.container.unMinifiedCont {
+                display: -webkit-inline-box;
+                display: inline-flex;
+               position: relative;
+            align-items: center;
+        justify-content: center;
+         flex-direction: column;
+                  width: 100%;
+                 margin: 10% 0;
+             min-height: 200px;
+            align-items: center;
+          border-radius: 50px;
+  -webkit-border-radius: 50px;
+     -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+       -o-border-radius: 50px;
 }
 
 h1 {
@@ -60,48 +101,49 @@ h3 {
   font-family: sans-serif;
   font-weight: 200;
 }
+
 a {
   text-decoration: none;
   color: #33aeae;
   -webkit-transition-duration: 2222ms;
-          transition-duration: 2222ms;
-          position: relative;
-          z-index: 1;
-          
+  transition-duration: 2222ms;
+  position: relative;
+  z-index: 1;
+
 }
 
 a[download] {
-  animation:1s fadein;
-  -webkit-animation:1s fadein;
+  animation: 1s fadein;
+  -webkit-animation: 1s fadein;
   animation-iteration-count: 1;
   line-height: 28px;
 }
 
 a:hover {
-  text-decoration: none;
-  color: #333;
+  text-decoration: underline;
+  color: #ccc;
   -webkit-transition-duration: 2222ms;
-          transition-duration: 2222ms;
+  transition-duration: 2222ms;
 }
 
 /* unminified page positioning */
-xmp.unminified {
+
+
+xmp {
   position: relative;
+  overflow-y: scroll;
+  max-width: 90vw;
   max-height: 50vh;
-  max-width: 1000px;
-  margin: auto -25%;
-  left: 50%;
-  overflow-Y: scroll;
-
-}
-
-xmp.minified {
-  position: relative;
-  overflow-x: scroll;
-  max-width: 1000px;
-  margin: auto -25%;
-  left: 50%;
+  margin: auto 5vw;
   line-height: 85px;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+
 }
 
 @keyframes fadein {
@@ -111,9 +153,11 @@ xmp.minified {
     transition-duration: 2222ms;
 
   }
+
   50% {
     font-size: 120%;
   }
+
   100% {
     font-size: 100%;
     -webkit-transition-duration: 2222ms;
