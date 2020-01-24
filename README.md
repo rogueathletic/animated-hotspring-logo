@@ -1,4 +1,4 @@
-![Minified-logo](https://rogueathletic.github.io/animated-hotspring-logo/hotspring-logo.svg)
+![Minified-logo](https://rogueathletic.github.io/animated-hotspring-logo/hot-spring-logo-minified.svg)
 ##Minified &amp; Animated - ###File Size: 17k
 
 
