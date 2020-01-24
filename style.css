@@ -12,7 +12,7 @@ body {
 }
 
 .minifiedAnimatedSvg {
-  background: url(./hotspring-logo.svg) center center no-repeat;
+  background: url(./hot-spring-logo-minified.svg) center center no-repeat;
   max-width: 800px;
   width: 800px;
   min-height: 200px;
